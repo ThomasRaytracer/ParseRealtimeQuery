@@ -146,7 +146,7 @@ namespace Parse.LiveQuery {
             return _webSocketClient?.State ?? WebSocketClientState.None;
         }
 
-        private bool IsConnected() {
+        public bool IsConnected() {
             return _hasReceivedConnected && GetWebSocketState() == WebSocketClientState.Connected;
         }
 
